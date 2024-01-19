@@ -1,26 +1,32 @@
-let  valorPantalla='';
+function enviarDatos(){
+    const nombre = document.getElementById('nombre').value;
 
-function limpiarPantalla(){
-    valorPantalla = '';
-    actualizarPantalla();
+    enviarDatosAlServidor(nombre)
+        .then(mensajeAgradecimiento)
+        .catch(mensajeError)
 }
 
-function agregarCaracter(char){
-    valorPantalla += char;
-    actualizarPantalla();
+function enviarDatosAlServidor(nombre){
+    return new Promise((resolve, reject)=> {
+        setTimeout(() => {
+            const exito = (nombre.toLowerCase() !== 'error');
+            if(exito){
+                resolve('Bienvenido al sistema');
+            }else{
+                reject('Acceso Denegado');
+            }
+        }, 2000);
+    });
 }
 
-function calcular(){
-    try {
-        valorPantalla = eval(valorPantalla).toString();
-        actualizarPantalla();
-        /*eval sirve para capturar si es funcion matematica y operar */
-    } catch (error) {
-        valorPantalla='no se puede calcular';
-        actualizarPantalla();
-    }
+function mensajeAgradecimiento(mensaje){
+    const mensajeElemnt = document.getElementById('mensaje');
+    mensajeElemnt.textContent = mensaje;
+    mensajeElemnt.classList.remove('oculto');
 }
 
-function actualizarPantalla(){
-    document.getElementById('pantalla').value = valorPantalla;
+function mensajeError(error){
+        const mensajeElemnt = document.getElementById('mensaje');
+        mensajeElemnt.textContent = error;
+        mensajeElemnt.classList.remove('oculto');
 }

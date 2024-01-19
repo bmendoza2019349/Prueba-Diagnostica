@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <title>Promesas</title>
 </head>
+
 <body>
-    <div class="titulo">
-        <h1>Bienvenido a mi calculadora</h1>
+    <div class="container">
+        <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <button type="button" onclick="enviarDatos()">Enviar</button>
+        </form>
+        <p id="mensaje" class="oculto"></p>
     </div>
-    <div class="calculadora">
-        <input type="text" readonly id="pantalla">
-        <div class="botones">
-            <button onclick="agregarCaracter('7')">7</button>
-            <button onclick="agregarCaracter('8')">8</button>
-            <button  onclick="agregarCaracter('9')">9</button>
-            <button onclick="agregarCaracter('/')">/</button>
-            <button onclick="agregarCaracter('4')">4</button>
-            <button onclick="agregarCaracter('5')">5</button>
-            <button onclick="agregarCaracter('6')">6</button>
-            <button onclick="agregarCaracter('*')">*</button>
-            <button onclick="agregarCaracter('1')">1</button>
-            <button onclick="agregarCaracter('2')">2</button>
-            <button onclick="agregarCaracter('3')">3</button>
-            <button onclick="agregarCaracter('-')">-</button>
-            <button onclick="agregarCaracter('0')">0</button>
-            <button onclick="agregarCaracter('.')">.</button>
-            <button onclick="calcular()">=</button>
-            <button onclick="agregarCaracter('+')">+</button>
-            <button onclick="limpiarPantalla()">C</button>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; Brandon Steev Mendoza Peres KINAL 2024.</p>
-        </div>
-
-    </footer>
     <script src="./assets/logica.js"></script>
-    
 </body>
+
 </html>
