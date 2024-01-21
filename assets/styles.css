@@ -50,12 +50,11 @@ button:hover{
 
 .footer{
     justify-content: space-between;
-    position: fixed;
-    display: flex;
-    padding: 0%;
-    width: 50%;
-}
-
-.footer-text p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     font-size: 1.3rem;
 }
+
+
