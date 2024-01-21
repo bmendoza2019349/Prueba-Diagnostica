@@ -1,0 +1,10 @@
+const words = ['Manzana', 'Perro', 'Montaña', 'Cielo', 'Libro', 'Agua', 'Ventana', 'Jardín', 'Feliz', 'Viaje',
+'Guitarra', 'Café', 'Sueño', 'Río', 'Playa', 'Estrella', 'Bosque', 'Amor', 'Puerta', 'Camino',
+'Música', 'Noche', 'Silencio', 'Aventura', 'Nube', 'Casa', 'Familia', 'Sonrisa', 'Arcoíris', 'Tierra',
+'Color', 'Palabra', 'Susurro', 'Fuego', 'Mariposa', 'Energía', 'Despertar', 'Reflejo', 'Sombra', 'Aire',
+'Sabiduría', 'Paz', 'Esperanza', 'Océano', 'Serena', 'Invierno', 'Primavera', 'Verano', 'Otoño', 'Recuerdo',
+'Pensamiento', 'Estilo', 'Armonía', 'Aventura', 'Ecos', 'Horizonte', 'Sereno', 'Alma', 'Canto', 'Luz',
+'Reflexión', 'Magia', 'Cascada', 'Felicidad', 'Sorpresa', 'Destino', 'Viento', 'Desafío', 'Mirada', 'Fuerza',
+'Campana', 'Deseo', 'Orquídea', 'Silueta', 'Travesía', 'Júbilo', 'Resplandor', 'Eterno', 'Rincón', 'Sensación',
+'Mirada', 'Misterio', 'Serenidad', 'Mundo', 'Universo', 'Sombra', 'Tesoros', 'Encanto', 'Fragancia', 'Secreto',
+'Vuelo', 'Tesoro', 'Suspiro', 'Aurora', 'Instante', 'Refugio', 'Oasis', 'Esencia', 'Vibración'];
